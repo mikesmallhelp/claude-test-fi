@@ -3,19 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import InputField from '@/components/InputField';
-import SelectField from '@/components/SelectField';
 import NavigationButtons from '@/components/NavigationButtons';
 import { useFormContext } from '@/lib/FormContext';
 import { validoiOsoitetiedot } from '@/lib/validointi';
 import { Osoitetiedot } from '@/lib/types';
-
-const maaVaihtoehdot = [
-  { value: 'suomi', label: 'Suomi' },
-  { value: 'ruotsi', label: 'Ruotsi' },
-  { value: 'norja', label: 'Norja' },
-  { value: 'tanska', label: 'Tanska' },
-  { value: 'viro', label: 'Viro' },
-];
 
 export default function OsoitetiedotPage() {
   const router = useRouter();
@@ -42,14 +33,6 @@ export default function OsoitetiedotPage() {
   }, [osoitetiedot, koskettu]);
   
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { id, value } = e.target;
-    setOsoitetiedotState(prev => ({
-      ...prev,
-      [id]: value
-    }));
-  };
-  
-  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const { id, value } = e.target;
     setOsoitetiedotState(prev => ({
       ...prev,
@@ -107,13 +90,12 @@ export default function OsoitetiedotPage() {
             required
           />
           
-          <SelectField
+          <InputField
             id="maa"
             label="Maa"
             value={osoitetiedot.maa}
-            onChange={handleSelectChange}
+            onChange={handleInputChange}
             onBlur={handleBlur}
-            options={maaVaihtoehdot}
             error={virheet.maa}
             required
           />
