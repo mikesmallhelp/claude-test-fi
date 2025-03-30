@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <FormProvider>
           <div className="container mx-auto max-w-2xl py-6 px-4">
-            <h1 className="text-3xl font-bold mb-6 text-center">Lomakesovellus</h1>
+            <h1 className="text-4xl font-bold mb-6 text-center">Lomakesovellus</h1>
             {children}
           </div>
         </FormProvider>

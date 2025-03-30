@@ -7,19 +7,19 @@ export default function Home() {
     <main className="flex flex-col items-center">
       <section className="w-full max-w-md">
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold mb-4">Tervetuloa lomakesovellukseen</h2>
+          <h2 className="text-2xl font-semibold mb-4">Tervetuloa lomakesovellukseen</h2>
           
-          <p className="mb-6">
+          <p className="mb-6 text-lg">
             Tällä lomakkeella kerätään tietoja useammalla sivulla. Sinun tulee täyttää:
           </p>
           
-          <ul className="list-disc pl-6 mb-6 space-y-2">
+          <ul className="list-disc pl-6 mb-6 space-y-2 text-lg">
             <li>Henkilötiedot</li>
             <li>Osoitetiedot</li>
             <li>Luottokorttitiedot</li>
           </ul>
           
-          <p className="mb-6">
+          <p className="mb-6 text-lg">
             Voit siirtyä seuraavalle sivulle vasta kun olet täyttänyt kaikki pakolliset tiedot.
           </p>
           

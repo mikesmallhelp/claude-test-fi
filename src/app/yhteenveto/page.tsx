@@ -39,11 +39,11 @@ export default function YhteenvetoPage() {
     <main className="flex flex-col items-center">
       <section className="w-full max-w-md">
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold mb-4">Yhteenveto</h2>
+          <h2 className="text-2xl font-semibold mb-4">Yhteenveto</h2>
           
           <div className="mb-8">
-            <h3 className="text-lg font-medium mb-2">Henkilötiedot</h3>
-            <div className="bg-gray-50 p-4 rounded-md">
+            <h3 className="text-xl font-medium mb-2">Henkilötiedot</h3>
+            <div className="bg-gray-50 p-4 rounded-md text-lg">
               <p><span className="font-medium">Nimi:</span> {lomakedata.henkilotiedot.etunimi} {lomakedata.henkilotiedot.sukunimi}</p>
               <p><span className="font-medium">Syntymäaika:</span> {lomakedata.henkilotiedot.syntymaaika}</p>
               <p><span className="font-medium">Sähköposti:</span> {lomakedata.henkilotiedot.sahkoposti}</p>
@@ -52,8 +52,8 @@ export default function YhteenvetoPage() {
           </div>
           
           <div className="mb-8">
-            <h3 className="text-lg font-medium mb-2">Osoitetiedot</h3>
-            <div className="bg-gray-50 p-4 rounded-md">
+            <h3 className="text-xl font-medium mb-2">Osoitetiedot</h3>
+            <div className="bg-gray-50 p-4 rounded-md text-lg">
               <p><span className="font-medium">Katuosoite:</span> {lomakedata.osoitetiedot.katuosoite}</p>
               <p><span className="font-medium">Postinumero:</span> {lomakedata.osoitetiedot.postinumero}</p>
               <p><span className="font-medium">Paikkakunta:</span> {lomakedata.osoitetiedot.paikkakunta}</p>
@@ -62,8 +62,8 @@ export default function YhteenvetoPage() {
           </div>
           
           <div className="mb-8">
-            <h3 className="text-lg font-medium mb-2">Maksutiedot</h3>
-            <div className="bg-gray-50 p-4 rounded-md">
+            <h3 className="text-xl font-medium mb-2">Maksutiedot</h3>
+            <div className="bg-gray-50 p-4 rounded-md text-lg">
               <p><span className="font-medium">Nimi kortissa:</span> {lomakedata.luottokorttitiedot.nimikortissa}</p>
               <p><span className="font-medium">Korttityyppi:</span> {korttityyppiMap[lomakedata.luottokorttitiedot.korttityyppi] || lomakedata.luottokorttitiedot.korttityyppi}</p>
               <p><span className="font-medium">Kortin numero:</span> {maskattuKorttinumero}</p>
@@ -72,7 +72,7 @@ export default function YhteenvetoPage() {
           </div>
           
           <div className="mt-8 text-center">
-            <p className="text-green-600 font-medium mb-4">
+            <p className="text-green-600 font-medium mb-4 text-xl">
               Kaikki tiedot on nyt tallennettu onnistuneesti!
             </p>
             

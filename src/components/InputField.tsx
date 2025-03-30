@@ -27,7 +27,7 @@ export default function InputField({
 }: InputFieldProps) {
   return (
     <div className="mb-4">
-      <label htmlFor={id} className="block text-sm font-medium mb-1">
+      <label htmlFor={id} className="block text-lg font-medium mb-1">
         {label} {required && <span className="text-red-500">*</span>}
       </label>
       <input
@@ -37,11 +37,11 @@ export default function InputField({
         onChange={onChange}
         onBlur={onBlur}
         placeholder={placeholder}
-        className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+        className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg ${
           error ? 'border-red-500' : 'border-gray-300'
         }`}
       />
-      {error && <p className="mt-1 text-sm text-red-600">{error}</p>}
+      {error && <p className="mt-1 text-base text-red-600">{error}</p>}
     </div>
   );
 }

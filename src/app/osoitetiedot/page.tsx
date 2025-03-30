@@ -58,7 +58,7 @@ export default function OsoitetiedotPage() {
     <main className="flex flex-col items-center">
       <section className="w-full max-w-md">
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold mb-4">Osoitetiedot</h2>
+          <h2 className="text-2xl font-semibold mb-4">Osoitetiedot</h2>
           
           <InputField 
             id="katuosoite"
